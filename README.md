@@ -16,7 +16,7 @@ Abdul Rozak Baharudin 05111840000148
 ## Soal 9
 
 * Menjalankan perintah a2enmod rewrite untuk mengaktifkan module rewrite.
-* Restart apache dengan perintah service apache2 restart
+* Restart apache dengan perintah " service apache2 restart "
 * Pindah ke directory /var/www/semerua10.pw dan buat file .htaccess dengan isi file
 
 <img width="368" alt="9" src="https://user-images.githubusercontent.com/57948206/99141513-9dcb1900-267e-11eb-84c2-f87fc68156c0.PNG">
@@ -50,6 +50,13 @@ Abdul Rozak Baharudin 05111840000148
 
 * tambahkan file /etc/apache2/sites-available/penanjakan.semerua10.pw sesuai dengan gambar :
 
+```
+<Directory /var/www/penanjakan.semerua10.pw/public/*>
+     Options -Indexes
+ </Directory>
+ 
+ ```
+
 <img width="363" alt="11" src="https://user-images.githubusercontent.com/57948206/99141516-9f94dc80-267e-11eb-9907-ea2848188789.PNG">
 
 ## Soal 12
@@ -76,6 +83,12 @@ Abdul Rozak Baharudin 05111840000148
 * Buka file penanjakan.semerua10.pw
 
 * Tambahkan konfirgurasi seperti pada gambar dibawah
+```
+<Directory /var/www/penanjakan.semerua10.pw/public/javascripts>
+     Options -Indexes
+ </Directory>
+ Alias "/js" "var/www/penanjakan.semerua10.pw/public/javascripts"
+ ```
 
 <img width="366" alt="13" src="https://user-images.githubusercontent.com/57948206/99141519-a0c60980-267e-11eb-9637-28c794a88dda.PNG">
 
@@ -83,9 +96,9 @@ Abdul Rozak Baharudin 05111840000148
 
 ## Soal 14
 
-* Buat directory naik.gunung.semerua10.pw dengan mkdir /var/www/naik.gunung.semerua10.pw
+* Buat directory naik.gunung.semerua10.pw dengan perintah " mkdir /var/www/naik.gunung.semerua10.pw "
 
-* Salin file dengan perintah " cp /etc/apache2/sites-available/default /etc/apache2/sites-available naik.gunung.semerua10.pw "
+* Salin file dengan perintah " cp /etc/apache2/sites-available/default  /etc/apache2/sites-available naik.gunung.semerua10.pw "
 
 * Buka filenya nano /etc/apache2/sites-available/naik.gunung.semerua10.pw
 
@@ -93,11 +106,11 @@ Abdul Rozak Baharudin 05111840000148
 
 <img width="364" alt="14a" src="https://user-images.githubusercontent.com/57948206/99141520-a15ea000-267e-11eb-8ae2-a8e83868dabb.PNG">
 
-* buka file ports.conf berada pada directory /etc/apache2
+* Buka file ports.conf berada pada directory /etc/apache2
 
-* tambahkan listen 8888 
+* Tambahkan listen 8888 
 
-* aktifkan konfirgurasi menggunakan perintah a2ensite
+* Aktifkan konfirgurasi menggunakan perintah a2ensite
 
 <img width="365" alt="14b" src="https://user-images.githubusercontent.com/57948206/99141521-a15ea000-267e-11eb-9861-57a21e8c5912.PNG">
 
