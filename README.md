@@ -24,7 +24,7 @@ Abdul Rozak Baharudin 05111840000148
 * Pindah ke directory /etc/apache2/sites-available kemudian buka file semerua10.pw dan tambahkan
 
 ```
-<Directory /var/www/kanto.a7.com>
+<Directory /var/www/semerua10.pw>
      Options +FollowSymLinks -Multiviews
      AllowOverride All
  </Directory>
@@ -61,7 +61,7 @@ Abdul Rozak Baharudin 05111840000148
 * Pindah ke directory /etc/apache2/sites-available kemudian buka file penanjakan.semerua10.pw dan tambahkan
 
 ```
-<Directory /var/www/pallet.kanto.a7.com>
+<Directory /var/www/penanjakan.semerua10.pw>
      Options +FollowSymLinks -Multiviews
      AllowOverride All
  </Directory>
