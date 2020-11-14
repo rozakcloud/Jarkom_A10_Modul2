@@ -7,13 +7,23 @@ Kana Rekha 05111840000001
 Abdul Rozak Baharudin 05111840000148	
 
 - [Lapres_modul2_A10](#lapres_modul2_A10)
+	- [Soal 1](#soal-2)
+	- [Soal 2](#soal-2)
+	- [Soal 3](#soal-3)
+	- [Soal 4](#soal-4)
+	- [Soal 5](#soal-5)
+	- [Soal 6](#soal-6)
+	- [Soal 7](#soal-7)
+	- [Soal 8](#soal-8)
 	- [Soal 9](#soal-9)
 	- [Soal 10](#soal-10)
  	- [Soal 11](#soal-11)
 	- [Soal 12](#soal-12)
   	- [Soal 13](#soal-13)
 	- [Soal 14](#soal-14)
+	- [Soal 15](#soal-15)
  	- [Soal 16](#soal-16)
+	- [Soal 17](#soal-17)
 	
 ## Soal 1
 * Install bind9 pada UML Malang
@@ -176,6 +186,19 @@ Abdul Rozak Baharudin 05111840000148
 
 <img width="365" alt="14b" src="https://user-images.githubusercontent.com/57948206/99141521-a15ea000-267e-11eb-9861-57a21e8c5912.PNG">
 
+## Soal 15
+* Pada UML Probolinggo ketikkan ```htpasswd -c /etc/apache2/.htpasswd semeru``` dan mengisi password dengan "kuynaikgunung" untuk membuat user
+* Setting pada ```nano /etc/apache2/sites-available/naik.gunung.semerua10.pw``` dengan syntax sebagai berikut
+```<Directory "/var/www/html">
+        AuthType Basic
+        AuthName "Restricted Content"
+        AuthUserFile /etc/apache2/.htpasswd
+        Require valid-user
+    </Directory>
+```
+* check pada website naik.gunung.semerua10.pw:8888 akan keluar pop-up sign in
+![15-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/15-1.jpg)
+
 ## Soal 16
 
 * Buka file default di /etc/apache2/sites-available/default
@@ -186,3 +209,8 @@ Abdul Rozak Baharudin 05111840000148
 
 * Restart apache dengan perintah service apache2 restart
 
+## Soal 17
+* Setting pada file ```nano /var/www/penanjakan.semerua10.pw/.htaccess``` seperti dibawah
+![17-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/17-1.jpg)
+* Coba buka pada website penanjakan.semerua10.pw/public/images/semerublabla.jpg maka akan redirect ke url penanjakan.semerua10.pw/public/images/semeru.jpg
+![17-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/17-2.jpg)
