@@ -14,6 +14,67 @@ Abdul Rozak Baharudin 05111840000148
   	- [Soal 13](#soal-13)
 	- [Soal 14](#soal-14)
  	- [Soal 16](#soal-16)
+	
+## Soal 1
+* Install bind9 pada UML Malang
+* Setting /etc/bind/named.conf.local
+![1-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/1-1.jpg)
+* mkdir /etc/bind/jarkom
+* copy file db.local menjadi semerua10.pw  ``` cp /etc/bind/db.local /etc/bind/jarkom/semerua10.pw ```
+* edit file semerua10.pw
+![1-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/1-2.jpg)
+* service bind9 restart pada UML Malang
+* setting pada client gresik nano /etc/resolve.conf masukkan ip malang, dan coba ping
+![1-3](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/1-3.jpg)
+## Soal 2
+* nano /etc/bind/jarkom/semerua10.pw pada UML Malang
+![2-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/2-1.jpg)
+* service bind9 restart pada UML Malang
+* lalu cek ping pada UML Client
+![2-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/2-2.jpg)
+## Soal 3
+* nano /etc/bind/jarkom/semerua10.pw dan setting seperti dibawah
+![3-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/3-1.jpg)
+* service bind9 restart pada UML Malang
+* tes ping penanjakan.semerua10.pw pada UML client
+![3-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/3-2.jpg)
+## Soal 4
+* nano /etc/bind/named.conf.local pada UML Malang dan setting seperti dibawah untuk menambah reverse address
+![4-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/4-1.jpg)
+* lalu copy file db.local ```cp /etc/bind/db.local /etc/bind/jarkom/71.151.10.in-addr.arpa``` lalu kita edit seperti dibawah
+![4-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/4-2.jpg)
+* tes pada UML client ```host -t PTR 10.151.73.92``` 
+![4-3](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/4-3.jpg)
+## Soal 5
+* setting pada UML MALANG dan MOJOKERTO pada file ```nano /etc/bind/named.conf.local``` seperti dibawah
+![5-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/5-1.jpg)
+![5-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/5-2.jpg)
+* service bind9 restart pada UML Mojokerto dan service bind stop pada UML Malang
+![5-3](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/4-3.jpg)
+* tes ping pada UML Client
+![5-4](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/5-4.jpg)
+## Soal 6
+* Setting pada UML Malang pada file ```nano /etc/bind/jarkom/semerue10.pw```, ```nano /etc/bind/named.conf.options``` dan ```nano /etc/bind/named.conf.local```
+![6-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/6-1.jpg)
+![6-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/6-2.jpg)
+![6-3](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/6-3.jpg)
+* Setting pada UML Mojokerto pada file ```nano /etc/bind/named.conf.local```
+![6-4](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/6-4.jpg)
+* Cek ping gunung.semeru.a10.pw pada UML client 
+![6-5](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/6-5.jpg)
+## Soal 7
+* Buat subdomain naik.gunung.semerua10.pw dengan men-setting file ```nano /etc/bind/delegasi/gunung/semerua10.pw``` pada UML Mojokerto
+![7-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/7-1.jpg)
+* Cek ping naik.gunung.semerua10.pw pada UML client
+![7-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/7-2.jpg)
+## Soal 8
+* Install php dan apache2
+* copy file default menjadi semerua10.pw pada directory ``` cd /etc/apache2/sites-available```
+![8-1](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/8-1.jpg)
+* wget 10.151.36.202/semeru.pw.zip pada directory /var/www/ lalu di unzip dan rename menjadi semerua10.pw
+* a2ensite semerua10.pw untuk enable site dan service apache2 restart
+* akses website semerua10.pw pada browser
+![8-2](https://github.com/rozakcloud/Jarkom_A10_Modul2/blob/main/img/8-2.jpg)
 ## Soal 9
 
 * Menjalankan perintah a2enmod rewrite untuk mengaktifkan module rewrite.
