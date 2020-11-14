@@ -105,7 +105,7 @@ Abdul Rozak Baharudin 05111840000148
 
 * Buka file default di /etc/apache2/sites-available/default
 
-* Kemudian tambahkan " Redirect permanent /http://semerua10.pw/
+* Kemudian tambahkan " Redirect permanent /http://semerua10.pw/ "
 
 <img width="367" alt="16" src="https://user-images.githubusercontent.com/57948206/99141522-a1f73680-267e-11eb-969a-46bc23bc3ff6.PNG">
 
