@@ -2,17 +2,26 @@
 
 Anggota :
 Kana Rekha 05111840000001
-Abdul Rozak Baharudin 5111840000148	
 
-# 9
+Abdul Rozak Baharudin 05111840000148	
+
+- [Lapres_modul2_A10](#lapres_modul2_A10)
+	- [Soal 9](#soal-9)
+	- [Soal 10](#soal-10)
+  - [Soal 11](#soal-11)
+	- [Soal 12](#soal-12)
+  - [Soal 13](#soal-13)
+	- [Soal 14](#soal-14)
+  - [Soal 16](#soal-16)
+## Soal 9
 
 <img width="368" alt="9" src="https://user-images.githubusercontent.com/57948206/99141513-9dcb1900-267e-11eb-84c2-f87fc68156c0.PNG">
 
-# 10
+## Soal 10
 
 <img width="363" alt="10" src="https://user-images.githubusercontent.com/57948206/99141515-9efc4600-267e-11eb-8d9b-699a07a30424.PNG">
 
-# 11
+## Soal 11
 
 <img width="363" alt="11" src="https://user-images.githubusercontent.com/57948206/99141516-9f94dc80-267e-11eb-9907-ea2848188789.PNG">
 
