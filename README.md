@@ -15,8 +15,21 @@ Abdul Rozak Baharudin 05111840000148
  	- [Soal 16](#soal-16)
 ## Soal 9
 
+* Menjalankan perintah a2enmod rewrite untuk mengaktifkan module rewrite.
+* Restart apache dengan perintah service apache2 restart
+* Pindah ke directory /var/www/semerua10.pw dan buat file .htaccess dengan isi file
+
 <img width="368" alt="9" src="https://user-images.githubusercontent.com/57948206/99141513-9dcb1900-267e-11eb-84c2-f87fc68156c0.PNG">
 
+* Pindah ke directory /etc/apache2/sites-available kemudian buka file semerua10.pw dan tambahkan
+
+```
+<Directory /var/www/kanto.a7.com>
+     Options +FollowSymLinks -Multiviews
+     AllowOverride All
+ </Directory>
+ ```
+* service apache2 restart
 ## Soal 10
 
 <img width="363" alt="10" src="https://user-images.githubusercontent.com/57948206/99141515-9efc4600-267e-11eb-8d9b-699a07a30424.PNG">
