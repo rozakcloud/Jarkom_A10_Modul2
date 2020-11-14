@@ -71,14 +71,43 @@ Abdul Rozak Baharudin 05111840000148
 
 ## Soal 13
 
+* Edit file konfigurasi yang berada di folder /etc/apache2/sites-available
+
+* Buka file penanjakan.semerua10.pw
+
+* Tambahkan konfirgurasi seperti pada gambar dibawah
+
 <img width="366" alt="13" src="https://user-images.githubusercontent.com/57948206/99141519-a0c60980-267e-11eb-9637-28c794a88dda.PNG">
+
+* Restart apache dengan perintah service apache2 restart
 
 ## Soal 14
 
+* Buat directory naik.gunung.semerua10.pw dengan mkdir /var/www/naik.gunung.semerua10.pw
+
+* Salin file dengan perintah " cp /etc/apache2/sites-available/default /etc/apache2/sites-available naik.gunung.semerua10.pw "
+
+* Buka filenya nano /etc/apache2/sites-available/naik.gunung.semerua10.pw
+
+* Edit <VirtualHost *:80> menjadi <VirtualHost *:8888>
+
 <img width="364" alt="14a" src="https://user-images.githubusercontent.com/57948206/99141520-a15ea000-267e-11eb-8ae2-a8e83868dabb.PNG">
+
+* buka file ports.conf berada pada directory /etc/apache2
+
+* tambahkan listen 8888 
+
+* aktifkan konfirgurasi menggunakan perintah a2ensite
 
 <img width="365" alt="14b" src="https://user-images.githubusercontent.com/57948206/99141521-a15ea000-267e-11eb-9861-57a21e8c5912.PNG">
 
 ## Soal 16
+
+* Buka file default di /etc/apache2/sites-available/default
+
+* Kemudian tambahkan " Redirect permanent /http://semerua10.pw/
+
 <img width="367" alt="16" src="https://user-images.githubusercontent.com/57948206/99141522-a1f73680-267e-11eb-969a-46bc23bc3ff6.PNG">
+
+* Restart apache dengan perintah service apache2 restart
 
