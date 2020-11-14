@@ -32,16 +32,41 @@ Abdul Rozak Baharudin 05111840000148
 * service apache2 restart
 ## Soal 10
 
+* Buat directory website dengan perintah  " mkdir /var/www/penanjakan.semerua10.pw "
+
+* Pindah ke direktori /etc/apache2/sites-available dan copy file default ke file penanjakan.semerua10.pw
+
+* Edit file penanjakan.semerua10.pw
+
 <img width="363" alt="10" src="https://user-images.githubusercontent.com/57948206/99141515-9efc4600-267e-11eb-8d9b-699a07a30424.PNG">
 
+* Aktifkan konfigurasi dengan perintah " a2ensite penanjakan.semerua10.pw "
+
+* Download file pendukung dengan wget 10.151.36.202/penanjakan.semerua10.pw.zip di directory /var/www/penanjakan.semerua10.pw
+
+* Extract file .zip
+
 ## Soal 11
+
+* tambahkan file /etc/apache2/sites-available/penanjakan.semerua10.pw sesuai dengan gambar :
 
 <img width="363" alt="11" src="https://user-images.githubusercontent.com/57948206/99141516-9f94dc80-267e-11eb-9907-ea2848188789.PNG">
 
 ## Soal 12
 
+* Pindah ke directory /var/www/penanjakan.semerua10.pw dan buat file .htaccess dengan isi file
+
 <img width="362" alt="12a" src="https://user-images.githubusercontent.com/57948206/99141517-a02d7300-267e-11eb-83cf-ed1555d441ff.PNG">
 
+* Pindah ke directory /etc/apache2/sites-available kemudian buka file penanjakan.semerua10.pw dan tambahkan
+
+```
+<Directory /var/www/pallet.kanto.a7.com>
+     Options +FollowSymLinks -Multiviews
+     AllowOverride All
+ </Directory>
+ ```
+ 
 <img width="364" alt="12b" src="https://user-images.githubusercontent.com/57948206/99141518-a02d7300-267e-11eb-84cf-f50ec5af58bc.PNG">
 
 ## Soal 13
