@@ -8,11 +8,11 @@ Abdul Rozak Baharudin 05111840000148
 - [Lapres_modul2_A10](#lapres_modul2_A10)
 	- [Soal 9](#soal-9)
 	- [Soal 10](#soal-10)
-  - [Soal 11](#soal-11)
+ 	- [Soal 11](#soal-11)
 	- [Soal 12](#soal-12)
-  - [Soal 13](#soal-13)
+  	- [Soal 13](#soal-13)
 	- [Soal 14](#soal-14)
-  - [Soal 16](#soal-16)
+ 	- [Soal 16](#soal-16)
 ## Soal 9
 
 <img width="368" alt="9" src="https://user-images.githubusercontent.com/57948206/99141513-9dcb1900-267e-11eb-84c2-f87fc68156c0.PNG">
